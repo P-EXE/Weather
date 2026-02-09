@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="WeatherApi.Tests/WeatherApi.Tests.csproj" Id="dddb0bbf-2a72-4506-a2e8-baab40c7065d" />
+  <Project Path="WeatherApi/WeatherApi.csproj" Id="a234a63d-3114-45b7-a6a0-c71736b63fcc" />
+  <Project Path="WeatherApp/WeatherApp.csproj">
+    <Deploy Solution="Debug|*" />
+  </Project>
+  <Project Path="WeatherShared/WeatherShared.csproj" />
+</Solution>

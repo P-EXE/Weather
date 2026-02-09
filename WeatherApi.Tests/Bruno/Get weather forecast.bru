@@ -1,0 +1,16 @@
+meta {
+  name: Get weather forecast
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://localhost:32771/weather/forecast
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

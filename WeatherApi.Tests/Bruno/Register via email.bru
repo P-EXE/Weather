@@ -1,0 +1,28 @@
+meta {
+  name: Register via email
+  type: http
+  seq: 5
+}
+
+post {
+  url: https://localhost:32775/auth/register-email
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "test@users.app",
+    "password": "P455w0rd!",
+    "firstName": "Test",
+    "lastName": "User",
+    "address": {
+      "address": "Fake Street 69, 420 EpicTown, Kekistan"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
