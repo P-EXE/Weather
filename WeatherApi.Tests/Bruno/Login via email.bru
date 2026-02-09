@@ -1,0 +1,23 @@
+meta {
+  name: Login via email
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://localhost:32771/auth/login-email
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "test@users.app",
+    "password": "P455w0rd!"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

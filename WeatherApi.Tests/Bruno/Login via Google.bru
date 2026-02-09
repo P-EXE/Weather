@@ -1,0 +1,16 @@
+meta {
+  name: Login via Google
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://localhost:32771/auth/login-google
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
