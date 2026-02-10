@@ -4,26 +4,26 @@ using WeatherApp.Views;
 namespace WeatherApp.Services;
 
 public static class ServiceRegistrar {
-  extension(IServiceCollection services) {
-	public void Register() {
-	  services.RegisterViews();
-	  services.RegisterViewModels();
+	extension(IServiceCollection services) {
+		public void Register() {
+			services.RegisterViews();
+			services.RegisterViewModels();
 	  services.RegisterServices();
 	  RegisterRoutes();
-	}
+		}
 
-	private void RegisterViews() {
+		private void RegisterViews() {
 	  services.AddTransient<AuthPage>();
-	  services.AddTransient<LoginPage>();
+			services.AddTransient<LoginPage>();
 	  services.AddTransient<WeatherPage>();
-	}
+		}
 
-	private void RegisterViewModels() {
-	  services.AddTransient<LoginVM>();
+		private void RegisterViewModels() {
+			services.AddTransient<LoginVM>();
 	  services.AddTransient<WeatherVM>();
-	}
-
-	private void RegisterServices() {
+		}
+		
+		private void RegisterServices() {
 	  services.AddTransient<AuthService>();
 	}
 
@@ -31,6 +31,6 @@ public static class ServiceRegistrar {
 	  Routing.RegisterRoute(Routes.AuthPage, typeof(AuthPage));
 	  Routing.RegisterRoute(Routes.LoginPage, typeof(LoginPage));
 	  Routing.RegisterRoute(Routes.WeatherPage, typeof(WeatherPage));
+		}
 	}
-  }
 }

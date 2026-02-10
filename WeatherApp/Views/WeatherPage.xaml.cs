@@ -4,7 +4,7 @@ namespace WeatherApp.Views;
 
 public partial class WeatherPage : ContentPage {
   public WeatherPage(WeatherVM vm) {
-	InitializeComponent();
+		InitializeComponent();
 	BindingContext = vm;
-  }
+	}
 }

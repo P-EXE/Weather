@@ -15,9 +15,9 @@
 	<TabBar Route="RegisterLogin">
 		<!-- Todo: Change to a RegisterPage when it is created -->
 		<Tab Title="Register">
-			<ShellContent
-        ContentTemplate="{DataTemplate views:LoginPage}"
-        Route="LoginPage" />
+	<ShellContent
+		ContentTemplate="{DataTemplate views:LoginPage}"
+		Route="LoginPage" />
 		</Tab>
 		<Tab Title="Log in">
 			<ShellContent
