@@ -1,8 +1,13 @@
 <Solution>
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
   <Project Path="WeatherApi.Tests/WeatherApi.Tests.csproj" Id="dddb0bbf-2a72-4506-a2e8-baab40c7065d" />
   <Project Path="WeatherApi/WeatherApi.csproj" Id="a234a63d-3114-45b7-a6a0-c71736b63fcc" />
   <Project Path="WeatherApp/WeatherApp.csproj">
     <Deploy Solution="Debug|*" />
   </Project>
   <Project Path="WeatherShared/WeatherShared.csproj" />
+  <Project Path="WeatherWeb/WeatherWeb.Client/WeatherWeb.Client.csproj" Id="5dddf92c-3d4d-40a6-a95a-cde2daf0767d" />
+  <Project Path="WeatherWeb/WeatherWeb/WeatherWeb.csproj" Id="b80d48ab-6d50-4d30-8b92-33e874ae0e07" />
 </Solution>
