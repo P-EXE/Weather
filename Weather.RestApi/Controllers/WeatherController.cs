@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using WeatherShared.DTOs;
 
-namespace WeatherApi.Controllers
+namespace Weather.RestApi.Controllers
 {
   [ApiController]
   [Route("[controller]")]
